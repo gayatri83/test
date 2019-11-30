@@ -1,0 +1,9 @@
+@(loginForm:Form[Login])
+@main("login page") {
+@helper.form(routes.HomeController.submitLoginForm) {
+@helper.CSRF.formField
+
+@helper.inputText(loginForm("email"))
+<input type="Submit">
+    }
+    }
